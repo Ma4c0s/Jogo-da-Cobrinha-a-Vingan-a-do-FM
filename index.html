@@ -124,10 +124,19 @@
 
   <!-- CONFIG -->
   <div id="settingsScreen" class="screen" style="display:none;">
-    <h1>⚙️ Configurações</h1>
-    <input type="range" id="musicVolume" min="0" max="1" step="0.01" value="0.5">
-    <input type="range" id="effectsVolume" min="0" max="1" step="0.01" value="0.5">
-    <button id="backFromSettings" class="btn">Voltar</button>
+  <h1>⚙️ Configurações</h1>
+
+  <div class="slider-container">
+  <label>🎵 Volume da Música: <span id="musicValue">50%</span></label>
+  <input type="range" id="musicVolume" min="0" max="1" step="0.01" value="0.5">
+</div>
+
+<div class="slider-container">
+  <label>🔊 Volume dos Efeitos: <span id="effectsValue">50%</span></label>
+  <input type="range" id="effectsVolume" min="0" max="1" step="0.01" value="0.5">
+</div>
+
+  <button id="backFromSettings" class="btn">Voltar</button>
   </div>
 
   <!-- JOGO -->
